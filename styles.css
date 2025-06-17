@@ -38,6 +38,15 @@
         text-shadow: 3px 2px 20px #00000066;
     }
 
+    @media (max-width: 900px) {
+      body {
+        padding: 0;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
     .featured {
         background: #F9DC4E;
         border: 2px solid #FF4D78;
