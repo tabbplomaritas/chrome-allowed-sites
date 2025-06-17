@@ -1,252 +1,275 @@
-    body {
-        font-family: 'Roboto', sans-serif;
-        background: #FFFFFF;
-        color: #18316D;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem;
-    }
+body {
+  font-family: "Roboto", sans-serif;
+  background: #ffffff;
+  color: #18316d;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
 
-    header {
-        text-align: center;
-        margin-bottom: 2rem;
-        padding: 2rem;
-        height: 250px;
-        background: linear-gradient(to bottom left, rgb(1 103 213 / 80%), rgb(15 141 139 / 80%)), url(./assets/computer-kids.jpg);
-        background-position: center;
-        background-size: cover;
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  height: 250px;
+  background: linear-gradient(
+      to bottom left,
+      rgb(1 103 213 / 80%),
+      rgb(15 141 139 / 80%)
+    ),
+    url(./assets/computer-kids.jpg);
+  background-position: center;
+  background-size: cover;
 
-        hr {
-                    border-top-color: #ffc11a;
-        border-bottom-color: #ffc11a;
-        height: 2px;
-        background-color: #ffc11a;
-        }
+  hr {
+    border-top-color: #ffc11a;
+    border-bottom-color: #ffc11a;
+    height: 2px;
+    background-color: #ffc11a;
+  }
 
-        p {
-            text-align: left;
-            color: white;
-        }
-    }
+  p {
+    text-align: left;
+    color: white;
+  }
+}
 
-    h1 {
-        font-family: 'Sour Gummy', sans-serif;
-        color: white;
-        text-align: left;
-        width: 22rem;
-        font-size: 3rem;
-        text-shadow: 3px 2px 20px #00000066;
-    }
+h1 {
+  font-family: "Sour Gummy", sans-serif;
+  color: white;
+  text-align: left;
+  width: 22rem;
+  font-size: 3rem;
+  text-shadow: 3px 2px 20px #00000066;
+}
 
-    @media (max-width: 900px) {
-      body {
-        padding: 0;
-      }
-      h1 {
-        font-size: 2rem;
-      }
-    }
+@media (max-width: 900px) {
+  body {
+    padding: 0;
+  }
+  header {
+    height: 160px;
+    margin-bottom: 0;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
 
-    .featured {
-        background: #F9DC4E;
-        border: 2px solid #FF4D78;
-        border-radius: 12px;
-        padding: 1rem;
-        margin-bottom: 2rem;
-        color: #18316D;
-    }
+.featured {
+  background: #f9dc4e;
+  border: 2px solid #ff4d78;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  color: #18316d;
+}
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 2rem;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
 
-    .section {
-        background: #f5f5f5;
-        border-radius: 12px;
-        padding: 1rem;
+.section {
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 1rem;
 
-        p {
-            margin: 0;
-        }
-    }
+  p {
+    margin: 0;
+  }
+}
 
-    /* section specific colors start */
-    .section.productivity {
-        color: white;
+.section button.toggle-btn {
+  float: right;
+  border-radius: 3px;
+  color: #0267d5;
+  padding: 4px;
+  background-color: white;
+  border: 1px solid #0267d5;
+  cursor: pointer;
+  transition: .35s all;
+}
 
-        /* section heading */
-        h2 span {
-            color: #0167d5;
-        }
+.section button.toggle-btn:hover {
+  background-color: #0267d5;
+  color: white;
+  border-color: #074180;
+}
 
-        /* clickable site card */
-        li {
-            background-color: #0167d5;
-            color: white;
-        }
+/* section specific colors start */
+.section.productivity {
+  color: white;
 
-        /* change background hover effect color */
-        li:hover {
-            background-color: #0050a5;
-            box-shadow: inset 350px 0 #0050a5;
-        }
-    }
+  /* section heading */
+  h2 span {
+    color: #0167d5;
+  }
 
-    /* end of section */
-    .section.design {
-        color: white;
+  /* clickable site card */
+  li {
+    background-color: #0167d5;
+    color: white;
+  }
 
-        /* section heading */
-        h2 span {
-            color: #0167d5;
-        }
+  /* change background hover effect color */
+  li:hover {
+    background-color: #0050a5;
+    box-shadow: inset 350px 0 #0050a5;
+  }
+}
 
-        /* clickable site card */
-        li {
-            background-color: #ffc019;
-            color: rgb(0, 0, 0);
-        }
+/* end of section */
+.section.design {
+  color: white;
 
-        /* change background hover effect color */
-        li:hover {
-            background-color: #f9d679;
-            box-shadow: inset 350px 0 #f9d679;
-        }
-    }
+  /* section heading */
+  h2 span {
+    color: #0167d5;
+  }
 
-    .section.coding {
-        color: white;
+  /* clickable site card */
+  li {
+    background-color: #ffc019;
+    color: rgb(0, 0, 0);
+  }
 
-        /* section heading */
-        h2 span {
-            color: #0167d5;
-        }
+  /* change background hover effect color */
+  li:hover {
+    background-color: #f9d679;
+    box-shadow: inset 350px 0 #f9d679;
+  }
+}
 
-        /* clickable site card */
-        li {
-            background-color: #108d8b;
-            color: white;
-        }
+.section.coding {
+  color: white;
 
-        /* change background hover effect color */
-        li:hover {
-            background-color: #03468d;
-            box-shadow: inset 350px 0 #057eae;
-        }
-    }
+  /* section heading */
+  h2 span {
+    color: #0167d5;
+  }
 
-    .section.writing {
-        color: white;
+  /* clickable site card */
+  li {
+    background-color: #108d8b;
+    color: white;
+  }
 
-        /* section heading */
-        h2 span {
-            color: #0167d5;
-        }
+  /* change background hover effect color */
+  li:hover {
+    background-color: #03468d;
+    box-shadow: inset 350px 0 #057eae;
+  }
+}
 
-        /* clickable site card */
-        li {
-            background-color: #242b54;
-            color: white;
-        }
+.section.writing {
+  color: white;
 
-        /* change background hover effect color */
-        li:hover {
-            background-color: #03468d;
-            box-shadow: inset 350px 0 #057eae;
-        }
-    }
+  /* section heading */
+  h2 span {
+    color: #0167d5;
+  }
 
-    .section.education {
-        color: white;
+  /* clickable site card */
+  li {
+    background-color: #242b54;
+    color: white;
+  }
 
-        /* section heading */
-        h2 span {
-            color: #0167d5;
-        }
+  /* change background hover effect color */
+  li:hover {
+    background-color: #03468d;
+    box-shadow: inset 350px 0 #057eae;
+  }
+}
 
-        /* clickable site card */
-        li {
-            background-color: #ffae3e;
-            color: rgb(0, 0, 0);
-        }
+.section.education {
+  color: white;
 
-        /* change background hover effect color */
-        li:hover {
-            background-color: #e16745;
-            box-shadow: inset 350px 0 #e45f3d;
-        }
-    }
+  /* section heading */
+  h2 span {
+    color: #0167d5;
+  }
 
-    /* end of section */
+  /* clickable site card */
+  li {
+    background-color: #ffae3e;
+    color: rgb(0, 0, 0);
+  }
 
+  /* change background hover effect color */
+  li:hover {
+    background-color: #e16745;
+    box-shadow: inset 350px 0 #e45f3d;
+  }
+}
 
-    /* section specific colors end */
-    .section h2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-        color: #18316D;
-    }
+/* end of section */
 
-    .section h2 img {
-        height: 65px;
-        width: auto;
-        padding: 5px;
-        margin-bottom: 10px;
+/* section specific colors end */
+.section h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #18316d;
+}
 
-    }
+.section h2 img {
+  height: 65px;
+  width: auto;
+  padding: 5px;
+  margin-bottom: 10px;
+}
 
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-    li {
-        background: #f9dc4f;
-        color: #18316D;
-        border-radius: 6px;
-        padding: 0.75rem;
-        margin-bottom: 0.5rem;
-        transition: .35s all;
-        display: flex;
-    }
+li {
+  background: #f9dc4f;
+  color: #18316d;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  transition: 0.35s all;
+  display: flex;
+}
 
-    li:hover {
-        background-color: #dcf4fd;
-        box-shadow: inset 350px 0 #8eeeda;
-        color: #fafafa;
-    }
+li:hover {
+  background-color: #dcf4fd;
+  box-shadow: inset 350px 0 #8eeeda;
+  color: #fafafa;
+}
 
+li img {
+  width: auto;
+  height: 40px;
+  padding: 0.5rem;
+}
 
-    li img {
-        width: auto;
-        height: 40px;
-        padding: .5rem;
-    }
+li .site-name {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 3px;
+}
 
-    li .site-name {
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1.2rem;
-        margin-bottom: 3px;
-    }
+.notes {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 1rem;
+}
 
-    .notes {
-        display: block;
-        margin-top: 0.25rem;
-        font-size: 1rem;
-    }
+ul a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 
-    ul a {
-        text-decoration: none;
-        color: inherit;
-        display: block;
-    }
-
-    .clickable-li {
-        cursor: pointer;
-    }
+.clickable-li {
+  cursor: pointer;
+}
